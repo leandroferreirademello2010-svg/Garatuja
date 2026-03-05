@@ -1,3 +1,3 @@
 # Garatuja do Leandro
 
-## HTML
+## [HTML] - É uma linguagem de marcação
