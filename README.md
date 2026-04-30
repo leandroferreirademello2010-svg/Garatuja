@@ -16,6 +16,7 @@ O atributo é o valor do objeto/classe. Cada objeto tem os mesmos atributos, mas
 
 Exemplo de objeto e classe:
 
+```typescript
 class Quadrilatero {
   lado1: number;
   lado2: number;
@@ -46,7 +47,7 @@ console.log(q1.eQuadrado());
 
 console.log(q2.calcularArea());
 console.log(q2.eQuadrado()); 
-
+```
 Nesse exemplo, os objetos q1 e q2 pertencem à mesma classe, mas possuem estados diferentes. Isso evidencia que cada objeto é um processo único.
 
 ## Método Construtor:
@@ -54,11 +55,12 @@ Nesse exemplo, os objetos q1 e q2 pertencem à mesma classe, mas possuem estados
 O construtor é o método que roda automaticamente quando você cria um objeto. Ele serve para já definir os valores iniciais daquele objeto no momento em que ele nasce.
 
 Exemplo:
-
+```typescript
 class Pessoa {
   nome: string;
   idade: number;
 
+//O contrutor vai definir os valores automaticamente
   constructor(paramNome: string, paramIdade: number) {
     this.nome = paramNome;
     this.idade = paramIdade;
@@ -68,15 +70,14 @@ class Pessoa {
 const pessoa1 = new Pessoa("Alice", 30);
 console.log(pessoa1.nome);
 console.log(pessoa1.idade);
-
-No exemplo quando você escreve new Pessoa("Alice", 30), o constructor dispara sozinho e já configura o objeto com os valores passados. Ele é mais prático porque ao invés de você chamar a classe e definir os valores em determinada variável, como no exemplo da classe e objeto, onde teve que puxar a variável específica da classe e definir o valor dela por fora, no constructor o valor é definido dentro classe ficando mais organizado e automático.
+```
 
 ## Herança:
 
 Herança é quando uma classe filha herda as características e ações de uma classe pai. Você escreve o que é comum uma vez na classe pai, e as filhas aproveitam tudo isso automaticamente.
 
 Exemplo:
-
+```typescript
 class Quadrado extends Quadrilatero {
   constructor(paramLado: number) {
     super(paramLado, paramLado);
@@ -86,7 +87,7 @@ class Quadrado extends Quadrilatero {
     return true;
   }
 }
-
+```
 A subclasse Quadrado herda atributos e métodos de Quadrilatero, mas redefine comportamento específico quando necessário.
 
 ## Encapsulamento: 
@@ -101,7 +102,7 @@ O encapsulamento protege o estado interno da classe, controlando acesso por modi
 ### Protected: Acessível na classe e em subclasses.
 
 Exemplo de Encapsulamento:
-
+```typescript
 class Quadrilatero {
   private lado1: number;
   private lado2: number;
@@ -123,7 +124,7 @@ class Quadrilatero {
     return this.lado1 === this.lado2;
   }
 }
-
+```
 Com private, o TypeScript impede acesso externo direto e reforça consistência do objeto.
 
 ## Getters e Setters:
@@ -136,7 +137,7 @@ Getters e setters permitem leitura e escrita controladas de atributos privados.
 ### Setter altera valor com validação.
 
 Exemplo:
-
+```typescript
 class Quadrilatero {
   private lado1: number;
   private lado2: number;
@@ -168,7 +169,7 @@ class Quadrilatero {
     return this.lado1 * this.lado2;
   }
 }
-
+```
 ## Métodos e atributos estáticos:
 
 ### Atributo estático: 
@@ -178,7 +179,7 @@ class Quadrilatero {
 O método é uma função que  fica dentro de uma classe e pertence ao objeto.
 
 Exemplo:
-
+```typescript
 class Quadrado {
   private _lado: number;
 
@@ -210,3 +211,4 @@ class Quadrado {
     return maior;
   }
 }
+```typescript
