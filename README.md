@@ -49,7 +49,7 @@ console.log(q2.eQuadrado());
 
 Nesse exemplo, os objetos q1 e q2 pertencem à mesma classe, mas possuem estados diferentes. Isso evidencia que cada objeto é um processo único.
 
-##M étodo Construtor:
+## Método Construtor:
 
 O construtor é o método que roda automaticamente quando você cria um objeto.
 Ele serve para já definir os valores iniciais daquele objeto no momento em que ele nasce.
