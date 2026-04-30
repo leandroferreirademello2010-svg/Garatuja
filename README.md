@@ -94,11 +94,11 @@ A subclasse Quadrado herda atributos e métodos de Quadrilatero, mas redefine co
 O encapsulamento protege o estado interno da classe, controlando acesso por modificadores (public, private, protected).
 
 
-#### Public: Acessível de qualquer lugar. Acesso é dentro e fora da classe.
+#### Public: Acessível de qualquer lugar.
 
-#### Private: Acessível apenas na classe. Acesso apenas dentro da classe.
+#### Private: Acessível apenas na classe.
 
-#### Protected: Acessível na classe e em subclasses. Acesso em classe e subclasses.
+#### Protected: Acessível na classe e em subclasses.
 
 Exemplo de Encapsulamento:
 
