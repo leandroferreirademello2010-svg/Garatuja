@@ -1,7 +1,5 @@
 # Garatuja do Leandro
 
-## [HTML] - É uma linguagem de marcação
-
 ## O que é POO?
 POO é uma forma de programar inspirada no mundo real.Em vez de escrever uma lista de instruções soltas, você organiza o código em "coisas" — cada coisa tem suas próprias características e ações.
 Um Carro, por exemplo, tem características (cor, marca, velocidade) e ações (acelerar, frear). No código, você cria essa "receita" uma vez e pode fabricar quantos carros quiser a partir dela.
