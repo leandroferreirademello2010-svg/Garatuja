@@ -17,36 +17,41 @@ O atributo é o valor do objeto/classe. Cada objeto tem os mesmos atributos, mas
 Exemplo de objeto e classe:
 
 ```typescript
+// Classe que representa um quadrilátero com dois lados
 class Quadrilatero {
   lado1: number;
   lado2: number;
 
+  // Retorna a área do quadrilátero (lado1 × lado2)
   calcularArea(): number {
     return this.lado1 * this.lado2;
   }
 
+  // Retorna o perímetro do quadrilátero (soma de todos os lados)
   calcularPerimetro(): number {
     return 2 * (this.lado1 + this.lado2);
   }
 
+  // Verifica se o quadrilátero é um quadrado (lado1 igual ao lado2)
   eQuadrado(): boolean {
     return this.lado1 === this.lado2;
   }
 }
 
+// Cria o objeto q1 e define seus lados como 5 e 10 (retângulo)
 const q1 = new Quadrilatero();
 q1.lado1 = 5;
 q1.lado2 = 10;
 
+// Cria o objeto q2 e define seus lados como 7 e 7 (quadrado)
 const q2 = new Quadrilatero();
 q2.lado1 = 7;
 q2.lado2 = 7;
 
-console.log(q1.calcularArea());
-console.log(q1.eQuadrado());
-
-console.log(q2.calcularArea());
-console.log(q2.eQuadrado()); 
+console.log(q1.calcularArea());  // Exibe a área do quadrado
+console.log(q1.eQuadrado());     // Exibe false (5 ≠ 10)
+console.log(q2.calcularArea());  // Exibe 49  (7 × 7)
+console.log(q2.eQuadrado());     // Exibe true  (7 = 7)
 ```
 Nesse exemplo, os objetos q1 e q2 pertencem à mesma classe, mas possuem estados diferentes. Isso evidencia que cada objeto é um processo único.
 
@@ -60,7 +65,7 @@ class Pessoa {
   nome: string;
   idade: number;
 
-//O contrutor vai definir os valores automaticamente
+// Inicializa os atributos do objeto no momento em que ele é criado.
   constructor(paramNome: string, paramIdade: number) {
     this.nome = paramNome;
     this.idade = paramIdade;
@@ -70,6 +75,7 @@ class Pessoa {
 const pessoa1 = new Pessoa("Alice", 30);
 console.log(pessoa1.nome);
 console.log(pessoa1.idade);
+
 ```
 
 ## Herança:
@@ -87,6 +93,8 @@ class Quadrado extends Quadrilatero {
     return true;
   }
 }
+
+
 ```
 A subclasse Quadrado herda atributos e métodos de Quadrilatero, mas redefine comportamento específico quando necessário.
 
@@ -104,7 +112,9 @@ O encapsulamento protege o estado interno da classe, controlando acesso por modi
 Exemplo de Encapsulamento:
 ```typescript
 class Quadrilatero {
+ // "private" impede que lado1 seja acessado ou modificado fora desta classe
   private lado1: number;
+ // "private" impede que lado1 seja acessado ou modificado fora desta classe
   private lado2: number;
 
   constructor(paramLado1: number, paramLado2: number) {
@@ -124,6 +134,8 @@ class Quadrilatero {
     return this.lado1 === this.lado2;
   }
 }
+
+
 ```
 Com private, o TypeScript impede acesso externo direto e reforça consistência do objeto.
 
@@ -147,19 +159,23 @@ class Quadrilatero {
     this.setLado2(paramLado2);
   }
 
+// Retorna o valor atual do lado1
   getLado1(): number {
     return this.lado1;
   }
 
+// Retorna o valor atual do lado2
   getLado2(): number {
     return this.lado2;
   }
 
+// Define um novo valor para lado1, garantindo que seja maior que zero
   setLado1(novoLado1: number): void {
     if (novoLado1 <= 0) throw new Error("lado1 deve ser maior que zero.");
     this.lado1 = novoLado1;
   }
 
+// Define um novo valor para lado2, garantindo que seja maior que zero
   setLado2(novoLado2: number): void {
     if (novoLado2 <= 0) throw new Error("lado2 deve ser maior que zero.");
     this.lado2 = novoLado2;
@@ -169,6 +185,7 @@ class Quadrilatero {
     return this.lado1 * this.lado2;
   }
 }
+
 ```
 ## Métodos e atributos estáticos:
 
@@ -211,4 +228,3 @@ class Quadrado {
     return maior;
   }
 }
-```typescript
