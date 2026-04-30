@@ -11,7 +11,7 @@ A grande vantagem é que o código fica organizado, reutilizável e fácil de ma
 
 Pense em uma classe como a planta de uma casa: ela define quantos quartos, portas e janelas existem. O objeto é a casa construída a partir dessa planta, você pode construir várias casas diferentes usando a mesma planta.
 
-Atributo:
+#### Atributo:
 O atributo é o valor do objeto/classe. Cada objeto tem os mesmos atributos, mas com valores diferentes;
 
 Exemplo de objeto e classe:
@@ -51,8 +51,7 @@ Nesse exemplo, os objetos q1 e q2 pertencem à mesma classe, mas possuem estados
 
 ## Método Construtor:
 
-O construtor é o método que roda automaticamente quando você cria um objeto.
-Ele serve para já definir os valores iniciais daquele objeto no momento em que ele nasce.
+O construtor é o método que roda automaticamente quando você cria um objeto. Ele serve para já definir os valores iniciais daquele objeto no momento em que ele nasce.
 
 Exemplo:
 
@@ -95,17 +94,11 @@ A subclasse Quadrado herda atributos e métodos de Quadrilatero, mas redefine co
 O encapsulamento protege o estado interno da classe, controlando acesso por modificadores (public, private, protected).
 
 
-Public:
+#### Public: Acessível de qualquer lugar. Acesso é dentro e fora da classe.
 
-Acessível de qualquer lugar. Acesso é dentro e fora da classe.
+#### Private: Acessível apenas na classe. Acesso apenas dentro da classe.
 
-Private:
-
-Acessível apenas na classe. Acesso apenas dentro da classe.
-
-Protected:
-
-Acessível na classe e em subclasses. Acesso em classe e subclasses.
+#### Protected: Acessível na classe e em subclasses. Acesso em classe e subclasses.
 
 Exemplo de Encapsulamento:
 
@@ -138,13 +131,9 @@ Com private, o TypeScript impede acesso externo direto e reforça consistência 
 
 Getters e setters permitem leitura e escrita controladas de atributos privados.
 
-Getter:
+#### Getter retorna valor.
 
-Retorna valor.
-
-Setter:
-
-Altera valor com validação.
+####S etter altera valor com validação.
 
 Exemplo:
 
@@ -182,12 +171,10 @@ class Quadrilatero {
 
 ## Métodos e atributos estáticos:
 
-Atributo estático: 
-
+### Atributo estático: 
 É um atributo que pertence à classe, não ao objeto. Ou seja, todos os objetos compartilham o mesmo valor, se um mudar, muda para todos.
 
-Método:
-
+### Método:
 O método é uma função que  fica dentro de uma classe e pertence ao objeto.
 
 Exemplo:
