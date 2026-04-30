@@ -7,7 +7,7 @@ A grande vantagem é que o código fica organizado, reutilizável e fácil de ma
 
 ## Classe e Objeto:
 
-Classe é um molde. Objeto é o que você cria a partir dele.
+### Classe é um molde. Objeto é o que você cria a partir dele.
 
 Pense em uma classe como a planta de uma casa: ela define quantos quartos, portas e janelas existem. O objeto é a casa construída a partir dessa planta, você pode construir várias casas diferentes usando a mesma planta.
 
