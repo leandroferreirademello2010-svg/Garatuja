@@ -7,7 +7,7 @@ POO é uma forma de programar inspirada no mundo real.Em vez de escrever uma lis
 Um Carro, por exemplo, tem características (cor, marca, velocidade) e ações (acelerar, frear). No código, você cria essa "receita" uma vez e pode fabricar quantos carros quiser a partir dela.
 A grande vantagem é que o código fica organizado, reutilizável e fácil de manter — se precisar mudar algo no Carro, muda em um só lugar e todos os objetos se beneficiam.
 
-##Classe e Objeto:
+## Classe e Objeto:
 
 Classe é um molde. Objeto é o que você cria a partir dele.
 
@@ -74,7 +74,7 @@ console.log(pessoa1.idade);
 
 No exemplo quando você escreve new Pessoa("Alice", 30), o constructor dispara sozinho e já configura o objeto com os valores passados. Ele é mais prático porque ao invés de você chamar a classe e definir os valores em determinada variável, como no exemplo da classe e objeto, onde teve que puxar a variável específica da classe e definir o valor dela por fora, no constructor o valor é definido dentro classe ficando mais organizado e automático.
 
-##Herança:
+## Herança:
 
 Herança é quando uma classe filha herda as características e ações de uma classe pai. Você escreve o que é comum uma vez na classe pai, e as filhas aproveitam tudo isso automaticamente.
 
@@ -92,7 +92,7 @@ class Quadrado extends Quadrilatero {
 
 A subclasse Quadrado herda atributos e métodos de Quadrilatero, mas redefine comportamento específico quando necessário.
 
-##Encapsulamento: 
+## Encapsulamento: 
 
 O encapsulamento protege o estado interno da classe, controlando acesso por modificadores (public, private, protected).
 
@@ -135,7 +135,7 @@ class Quadrilatero {
 
 Com private, o TypeScript impede acesso externo direto e reforça consistência do objeto.
 
-##Getters e Setters:
+## Getters e Setters:
 
 
 Getters e setters permitem leitura e escrita controladas de atributos privados.
@@ -182,7 +182,7 @@ class Quadrilatero {
   }
 }
 
-##Métodos e atributos estáticos:
+## Métodos e atributos estáticos:
 
 Atributo estático: 
 
