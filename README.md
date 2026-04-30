@@ -133,7 +133,7 @@ Getters e setters permitem leitura e escrita controladas de atributos privados.
 
 #### Getter retorna valor.
 
-####S etter altera valor com validação.
+#### Setter altera valor com validação.
 
 Exemplo:
 
