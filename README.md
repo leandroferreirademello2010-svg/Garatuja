@@ -94,11 +94,11 @@ A subclasse Quadrado herda atributos e métodos de Quadrilatero, mas redefine co
 O encapsulamento protege o estado interno da classe, controlando acesso por modificadores (public, private, protected).
 
 
-#### Public: Acessível de qualquer lugar.
+### Public: Acessível de qualquer lugar.
 
-#### Private: Acessível apenas na classe.
+### Private: Acessível apenas na classe.
 
-#### Protected: Acessível na classe e em subclasses.
+### Protected: Acessível na classe e em subclasses.
 
 Exemplo de Encapsulamento:
 
@@ -131,9 +131,9 @@ Com private, o TypeScript impede acesso externo direto e reforça consistência 
 
 Getters e setters permitem leitura e escrita controladas de atributos privados.
 
-#### Getter retorna valor.
+### Getter retorna valor.
 
-#### Setter altera valor com validação.
+### Setter altera valor com validação.
 
 Exemplo:
 
