@@ -1,8 +1,8 @@
 # Garatuja do Leandro
 
-##Diferência entre JavaScript, TypeScript e Java
+## Diferência entre JavaScript, TypeScript e Java
 
-###JavaScript (JS)
+### JavaScript:
 JavaScript é uma linguagem dinâmica e interpretada, criada originalmente para rodar nos navegadores. Hoje também executa no servidor via Node.js. Suas principais características são:
 
 Tipagem fraca e dinâmica — variáveis não têm tipo fixo e podem mudar em tempo de execução
@@ -12,7 +12,7 @@ Ecossistema enorme — npm com milhões de pacotes disponíveis
 
 É ideal para desenvolvimento web front-end, scripts rápidos e aplicações onde a flexibilidade é mais importante que a rigidez estrutural.
 
-###TypeScript (TS)
+### TypeScript:
 TypeScript é um superset do JavaScript desenvolvido pela Microsoft. Todo código JS válido é também TS válido, mas o TS adiciona uma camada fundamental: a tipagem estática opcional. Suas características:
 
 Tipagem estática — você declara os tipos das variáveis, parâmetros e retornos de função
@@ -22,7 +22,7 @@ Melhor suporte a IDEs — autocompletar e refatoração muito mais precisos
 
 É a escolha dominante em projetos JavaScript de médio a grande porte, pois traz segurança sem abandonar o ecossistema JS.
 
-###Java
+### Java:
 Java é uma linguagem totalmente diferente das anteriores — robusta, fortemente tipada e compilada para bytecode que roda na JVM (Java Virtual Machine). Suas características:
 
 Tipagem forte e estática — obrigatória, sem opção
